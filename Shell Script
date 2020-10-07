@@ -1,5 +1,7 @@
-**** Shell Script****** 
-# Script for if condition 
+***************************************************************** Shell Script******************************************************************************* 
+
+
+*****************************************************************Script for if condition ***************************************************************************
 
 
 
@@ -14,4 +16,62 @@ echo Count is 100
 else
 echo  Count is not equal to 100
 fi
+
+
+
+*********************************************************************script to check file is present or not *************************************************************
+#!/bin/bash
+
+if [ -e /home/centos/error.txt ]
+then
+echo File is present
+else
+echo File not present
+fi
+
+
+******************************************************** Script to check  to print all the user *************************************************************************
+#!/bin/bash
+
+i=1
+for username in `awk -F: '{print $1}' /etc/passwd`
+do
+echo "Username $((i++)) : $username"
+done
+
+******************************************************** Script to  Implement Case statement script *************************************************************************
+
+#!/bin/bash
+
+# Case Statement Demo
+
+echo "Please choose one of the option from below: "
+echo
+echo "a  --> Display Date and Time"
+echo "b  --> List of all directories"
+echo "c  --> List of all user logged in"
+echo "d  --> List the sytem uptime"
+echo
+
+
+      read choice
+      case $choice in
+    a) date;;
+    b) ls -ltr ;;
+    c) who;;
+    d) uptime;;
+    *) echo Inavlid choice --Bye!
+esac
+
+******************************************************** Script to  Do while demo *************************************************************************
+
+#!/bin/bash
+#do while loop demo
+c=1
+while [ $c -le 5 ]
+do
+echo "welcome to $c times"
+((c++))
+done
+
 
