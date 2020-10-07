@@ -1,0 +1,17 @@
+**** Shell Script****** 
+# Script for if condition 
+
+
+
+#!/bin/bash
+
+count=100
+clear
+
+if [ $count -eq 100 ]
+then
+echo Count is 100
+else
+echo  Count is not equal to 100
+fi
+
