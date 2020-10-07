@@ -1,0 +1,26 @@
+#!/bin/bash
+
+
+#Author
+#Date 
+#Desc
+
+a=`hostname`
+e=`pwd`
+echo Hello my present worknig directory is $e and   sever name is $a
+echo 
+echo What is your name?
+read b 
+echo 
+echo What is your profession
+read c
+echo What is fav Work in lif
+read d 
+echo 
+echo your name is $b
+echo your proffession is $c  and it is nice work to do 
+echo your $d is awsome 
+echo
+
+
+

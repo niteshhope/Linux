@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# creating file 
+
+for i in {1..5}
+do
+touch file_$i
+done
+
+

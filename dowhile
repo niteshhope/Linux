@@ -1,0 +1,8 @@
+#!/bin/bash
+#do while loop demo 
+c=1
+while [ $c -le 5 ]
+do 
+echo "welcome to $c times" 
+((c++))
+done

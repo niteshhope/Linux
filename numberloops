@@ -1,0 +1,10 @@
+#!/bin/bash 
+
+# for loop for printing number 1 to 20 
+
+for i in {1..20}
+do 
+echo  value of i = $i
+
+done
+

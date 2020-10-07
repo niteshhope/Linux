@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ -e /home/centos/error.txt ] 
+then
+echo File is present 
+else
+echo File not present 
+fi 
+

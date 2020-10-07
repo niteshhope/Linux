@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#This script using dowhile and expr 
+
+c=0
+n=10
+while [ $c -lt 10 ]
+do 
+	echo $n second left to stop the process $1
+	echo
+	sleep 1
+
+n=`expr $n - 1`
+c=`expr $c + 1`
+# There should be no space between =and`expr otherwsie command not found error will appear
+done 
+
+

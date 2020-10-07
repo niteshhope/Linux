@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# print week of the days
+
+i=1
+
+for days in Mon Tue Wed Thr Fri Sat Sun 
+do
+echo "weekday $((i++)) : $days"
+done
+

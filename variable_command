@@ -1,0 +1,9 @@
+#!/bin/bash 
+
+FirstName='Nitesh Kumar'
+Job=Devops 
+
+echo "My Name is $FirstName"
+echo 
+echo "my Job is $Job"
+

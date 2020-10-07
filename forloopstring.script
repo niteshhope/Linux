@@ -1,0 +1,8 @@
+#!/bin/bash 
+
+# Appling for loop with set of string 
+
+for i in eat drink walk play sleep 
+do 
+echo see Nitesh $i
+done 
