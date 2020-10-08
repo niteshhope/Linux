@@ -1,0 +1,20 @@
+#!/bin/bash 
+
+#Author: nitesh Kumar
+#Date :  10/08/2020
+#Description : ping to ip address to check wheather we are able to connect 
+#Modified : 10/08/2020
+#Date_formate -- MM/DD/YYYY
+
+# Command -- Ping is comamnd to ping ip 
+# -c<number> number of times want to ping 
+# $? will  return  the output of abpve command in our case ping -c5 192.168.0.1  ..if will zero when it able to ping 
+ ping -c5 192.168.0.1
+          if [ $? -eq 0 ] 
+          then 
+	  echo ok 
+          else 
+	  echo NOT OK 
+          fi  
+
+
